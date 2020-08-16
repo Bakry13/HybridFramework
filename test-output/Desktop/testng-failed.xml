@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Desktop]">
+  <parameter name="ReportName" value="Calculator"/>
+  <test name="Calculator(failed)">
+    <parameter name="ReportName" value="Calculator"/>
+    <classes>
+      <class name="Desktop.CalculatorTest">
+        <methods>
+          <include name="Add"/>
+        </methods>
+      </class> <!-- Desktop.CalculatorTest -->
+      <class name="Utilities.ExtentReport">
+        <methods>
+          <include name="EndReport"/>
+          <include name="StartReport"/>
+        </methods>
+      </class> <!-- Utilities.ExtentReport -->
+    </classes>
+  </test> <!-- Calculator(failed) -->
+</suite> <!-- Failed suite [Desktop] -->

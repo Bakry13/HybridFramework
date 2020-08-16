@@ -1,0 +1,26 @@
+<suite name="Web" parallel="tests">
+ 	<test name="ChromeSearch">
+	<parameter name="ReportName" value="ChromeSearch" />
+	<parameter name="Browser" value="Chrome" />
+		<classes>
+			<class name="Utilities.ExtentReport" />
+			<class name="Utilities.WebTestBase" /> 
+		</classes>
+	</test>
+<!-- 	<test name="FirefoxSearch">
+	<parameter name="ReportName" value="FirefoxSearch" />
+	<parameter name="Browser" value="Firefox" />
+		<classes>
+			<class name="Utilities.ExtentReport" />
+			<class name="Utilities.WebTestBase" />  
+		</classes>
+	</test>
+	<test name="IESearch">
+	<parameter name="ReportName" value="IESearch" />
+	<parameter name="Browser" value="IE" />
+		<classes>
+			<class name="Utilities.ExtentReport" />
+			<class name="Utilities.WebTestBase" /> 
+		</classes>
+	</test> -->
+</suite>

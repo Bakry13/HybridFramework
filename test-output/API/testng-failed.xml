@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [API]">
+  <test name="Consumption(failed)">
+    <classes>
+      <class name="Consumption.ConsumptionGeneralProductsTest">
+        <methods>
+          <include name="noFamilyProduct"/>
+          <include name="dataProduct"/>
+          <include name="supperpassProduct"/>
+          <include name="EndReportTestCase"/>
+          <include name="NoDataProduct"/>
+          <include name="noRoamingProduct"/>
+          <include name="StartTestCase"/>
+          <include name="roamingProduct"/>
+          <include name="familyProduct"/>
+        </methods>
+      </class> <!-- Consumption.ConsumptionGeneralProductsTest -->
+      <class name="Loyalty.LoyaltyTest">
+        <methods>
+          <include name="EndReportTestCase"/>
+          <include name="StartTestCase"/>
+        </methods>
+      </class> <!-- Loyalty.LoyaltyTest -->
+      <class name="Utilities.ExtentReport">
+        <methods>
+          <include name="EndReport"/>
+          <include name="EndReport"/>
+          <include name="StartReport"/>
+          <include name="StartReport"/>
+        </methods>
+      </class> <!-- Utilities.ExtentReport -->
+      <class name="Loyalty.LoyaltyErrorTest">
+        <methods>
+          <include name="EndReportTestCase"/>
+          <include name="StartTestCase"/>
+        </methods>
+      </class> <!-- Loyalty.LoyaltyErrorTest -->
+      <class name="Consumption.ConsumptionErrorTest">
+        <methods>
+          <include name="StartTestCase"/>
+          <include name="EndReportTestCase"/>
+        </methods>
+      </class> <!-- Consumption.ConsumptionErrorTest -->
+    </classes>
+  </test> <!-- Consumption(failed) -->
+</suite> <!-- Failed suite [API] -->

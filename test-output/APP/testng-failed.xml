@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [APP]">
+  <parameter name="ReportName" value="Login"/>
+  <test name="Login(failed)">
+    <parameter name="ReportName" value="Login"/>
+    <classes>
+      <class name="App.LoginExecuter">
+        <methods>
+          <include name="MISubscriptionTestActions"/>
+        </methods>
+      </class> <!-- App.LoginExecuter -->
+      <class name="Utilities.ExtentReport">
+        <methods>
+          <include name="EndReport"/>
+          <include name="StartReport"/>
+        </methods>
+      </class> <!-- Utilities.ExtentReport -->
+    </classes>
+  </test> <!-- Login(failed) -->
+</suite> <!-- Failed suite [APP] -->

@@ -1,0 +1,9 @@
+<suite name="Desktop">
+	<test name="Calculator">
+	<parameter name="ReportName" value="Calculator" />
+		<classes>
+			<class name="Utilities.ExtentReport" />
+			<class name="Desktop.CalculatorTest" />
+		</classes>
+	</test>
+</suite>

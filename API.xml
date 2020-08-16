@@ -1,0 +1,20 @@
+<suite name="API">
+	<test name="Loyalty">
+	<parameter name="ReportName" value="Loyality" />
+		<classes>
+			<class name="Utilities.ExtentReport" />
+			<class name="Loyalty.LoyaltyTest" />
+	    	<class name="Loyalty.LoyaltyErrorTest" />
+			<Methodes>
+			</Methodes>
+		</classes>
+	</test>
+	<test name="Consumption">
+	<parameter name="ReportName" value="Consumption" />
+		<classes>
+			<class name="Utilities.ExtentReport" />
+			<class name="Consumption.ConsumptionErrorTest" /> 
+			<class name="Consumption.ConsumptionGeneralProductsTest" />
+		</classes>
+	</test>
+</suite>
