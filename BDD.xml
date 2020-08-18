@@ -1,0 +1,9 @@
+<suite name="BDD">
+	<test name="GoogleSearch">
+	<parameter name="ReportName" value="GoogleSearch" />
+		<classes>
+			<class name="Utilities.ExtentReport" />
+			<class name="Runner.SearchRunner" />
+		</classes>
+	</test>
+</suite>
