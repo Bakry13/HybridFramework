@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7a048d77-c03b-4b7d-9e34-dc5729319830" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Reports/ChromeSearch.html" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/ChromeSearch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reports/CucumberReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/CucumberReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reports/GoogleSearch.html" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/GoogleSearch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reports/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/Login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/Framwork/Hybrid/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/maven/Framwork/Hybrid/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/Framwork/Hybrid/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/maven/Framwork/Hybrid/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/jquery-1.7.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/jquery-1.7.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-Runner.SearchRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-Runner.SearchRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-reports.css" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-reports.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-reports.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-reports.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="2" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Users\V19MOsman\AppData\Local\JetBrains\IntelliJ IDEA Community Edition 2020.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1gMp9HdXmS9zC1HPd8hztkediH7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../API" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager" selected="TestNG.D:/Automation/HybridFramework/BDD.xml">
+    <configuration name="D:/Automation/HybridFramework/API.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Hybrid" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/API.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="D:/Automation/HybridFramework/App.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Hybrid" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/App.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="D:/Automation/HybridFramework/BDD.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Hybrid" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/BDD.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="D:/Automation/HybridFramework/Web.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Hybrid" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/Web.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchRunner" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Hybrid" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Runner" />
+      <option name="MAIN_CLASS_NAME" value="Runner.SearchRunner" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.D:/Automation/HybridFramework/BDD.xml" />
+        <item itemvalue="TestNG.D:/Automation/HybridFramework/Web.xml" />
+        <item itemvalue="TestNG.SearchRunner" />
+        <item itemvalue="TestNG.D:/Automation/HybridFramework/App.xml" />
+        <item itemvalue="TestNG.D:/Automation/HybridFramework/API.xml" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a048d77-c03b-4b7d-9e34-dc5729319830" name="Default Changelist" comment="" />
+      <created>1597934163100</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597934163100</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="121" y="0" key="#Project_Structure" timestamp="1597934436440">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="121" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1597934436440" />
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1597934239105">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1597934239105" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1598873205311">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1598873205311" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1598873205310">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1598873205310" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1598873205310">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1598873205310" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1598873205311">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1598873205311" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Hybrid$D__Automation_HybridFramework_App_xml.ic" NAME="$PROJECT_DIR$/App.xml Coverage Results" MODIFIED="1597936120848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Hybrid$D__Automation_HybridFramework_BDD_xml.ic" NAME="$PROJECT_DIR$/BDD.xml Coverage Results" MODIFIED="1597935704888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Hybrid$SearchRunner.ic" NAME="SearchRunner Coverage Results" MODIFIED="1597936259797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Runner.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Hybrid$D__Automation_HybridFramework_API_xml.ic" NAME="$PROJECT_DIR$/API.xml Coverage Results" MODIFIED="1597935800460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Hybrid$D__Automation_HybridFramework_Web_xml.ic" NAME="$PROJECT_DIR$/Web.xml Coverage Results" MODIFIED="1597935893287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

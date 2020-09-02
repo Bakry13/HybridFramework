@@ -2,8 +2,8 @@
 	<test name="Login">
 	<parameter name="ReportName" value="Login" />
 		<classes>
-			<class name="Utilities.ExtentReport" />
-			<class name="App.LoginExecuter" />
+			<class name="utilities.ExtentReport" />
+			<class name="app.LoginExecuter" />
 		</classes>
 	</test>
 </suite>

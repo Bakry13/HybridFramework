@@ -2,19 +2,19 @@
 	<test name="Loyalty">
 	<parameter name="ReportName" value="Loyality" />
 		<classes>
-			<class name="Utilities.ExtentReport" />
-			<class name="Loyalty.LoyaltyTest" />
-	    	<class name="Loyalty.LoyaltyErrorTest" />
+			<class name="utilities.ExtentReport" />
+			<class name="loyalty.LoyaltyTest" />
+	    	<class name="loyalty.LoyaltyErrorTest" />
 			<Methodes>
 			</Methodes>
 		</classes>
 	</test>
-	<test name="Consumption">
+<!-- 	<test name="Consumption">
 	<parameter name="ReportName" value="Consumption" />
 		<classes>
-			<class name="Utilities.ExtentReport" />
-			<class name="Consumption.ConsumptionErrorTest" /> 
-			<class name="Consumption.ConsumptionGeneralProductsTest" />
+			<class name="utilities.ExtentReport" />
+			<class name="consumption.ConsumptionErrorTest" /> 
+			<class name="consumption.ConsumptionGeneralProductsTest" />
 		</classes>
-	</test>
+	</test> -->
 </suite>

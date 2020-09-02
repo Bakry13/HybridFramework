@@ -2,8 +2,8 @@
 	<test name="GoogleSearch">
 	<parameter name="ReportName" value="GoogleSearch" />
 		<classes>
-			<class name="Utilities.ExtentReport" />
-			<class name="Runner.SearchRunner" />
+			<class name="utilities.ExtentReport" />
+			<class name="runner.SearchRunner" />
 		</classes>
 	</test>
 </suite>

@@ -5,17 +5,18 @@
   <test name="Login(failed)">
     <parameter name="ReportName" value="Login"/>
     <classes>
-      <class name="App.LoginExecuter">
+      <class name="utilities.ExtentReport">
+        <methods>
+          <include name="endReport"/>
+          <include name="startReport"/>
+        </methods>
+      </class> <!-- utilities.ExtentReport -->
+      <class name="app.LoginExecuter">
         <methods>
           <include name="MISubscriptionTestActions"/>
+          <include name="appInit"/>
         </methods>
-      </class> <!-- App.LoginExecuter -->
-      <class name="Utilities.ExtentReport">
-        <methods>
-          <include name="EndReport"/>
-          <include name="StartReport"/>
-        </methods>
-      </class> <!-- Utilities.ExtentReport -->
+      </class> <!-- app.LoginExecuter -->
     </classes>
   </test> <!-- Login(failed) -->
 </suite> <!-- Failed suite [APP] -->
