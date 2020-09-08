@@ -5,20 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a048d77-c03b-4b7d-9e34-dc5729319830" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Reports/ChromeSearch.html" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/ChromeSearch.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/CucumberReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/CucumberReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/GoogleSearch.html" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/GoogleSearch.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/Login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/CucumberReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/CucumberReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/Framwork/Hybrid/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/maven/Framwork/Hybrid/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/Framwork/Hybrid/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/maven/Framwork/Hybrid/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/API/Loyalty.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/API/Loyalty.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/API/Loyalty.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/API/Loyalty.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Default suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/jquery-1.7.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/jquery-1.7.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-Runner.SearchRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-Runner.SearchRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-Loyalty.LoyaltyErrorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-Loyalty.LoyaltyErrorTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-Loyalty.LoyaltyTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-Loyalty.LoyaltyTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-runner.SearchRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-runner.SearchRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/API/Loyalty.properties" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/API/Loyalty.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/API/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/API/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/API/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/API/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/API/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/API/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/API/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/API/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/API/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/API/methods-not-run.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/API/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/API/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/API/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/API/testng.xml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/API/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/API/toc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default suite/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default suite/groups.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default suite/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default suite/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default suite/testng.xml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default suite/toc.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-reports.css" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-reports.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-reports.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-reports.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +63,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../API" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BDDFramework" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -135,10 +152,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1597934436440" />
-    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1597934239105">
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1599137421808">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1597934239105" />
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1599137421808" />
     <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1598873205311">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

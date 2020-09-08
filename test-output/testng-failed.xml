@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [APP]">
-  <parameter name="ReportName" value="Login"/>
-  <test name="Login(failed)">
-    <parameter name="ReportName" value="Login"/>
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="utilities.ExtentReport">
+      <class name="runner.SearchRunner">
         <methods>
-          <include name="endReport"/>
-          <include name="startReport"/>
+          <include name="webInit"/>
+          <include name="runScenario" invocation-numbers="1 2 3"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
         </methods>
-      </class> <!-- utilities.ExtentReport -->
-      <class name="app.LoginExecuter">
-        <methods>
-          <include name="MISubscriptionTestActions"/>
-          <include name="appInit"/>
-        </methods>
-      </class> <!-- app.LoginExecuter -->
+      </class> <!-- runner.SearchRunner -->
     </classes>
-  </test> <!-- Login(failed) -->
-</suite> <!-- Failed suite [APP] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

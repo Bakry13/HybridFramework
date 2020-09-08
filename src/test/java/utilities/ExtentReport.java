@@ -19,6 +19,7 @@ public class ExtentReport
 	@Parameters("ReportName")
 	public void startReport(String ReportName) 
 	{
+		tcNumb = 1;
 		extent = new ExtentReports(System.getProperty("user.dir") + "/reports/" + ReportName + ".html");
 	}
 //-----------------------------------------------------------------------------------------------------------
@@ -27,6 +28,20 @@ public class ExtentReport
 	{
 		extent.flush();
 		extent.close();
+	}
+//===========================================================================================================
+	public static void startTC(String tcName)
+	{
+		String tcNumber = "1";
+		String testCaseName = "0";
+		tcNumber = Integer.toString(tcNumb++); //Counting test case number
+		testCaseName = tcNumber + "-  " + tcName; //store test case name with its number
+		test = extent.startTest(testCaseName); //Test Case name in extent report
+	}
+//-----------------------------------------------------------------------------------------------------------
+	public static void endTC()
+	{
+		extent.endTest(test); //close the test case in extent report
 	}
 //===========================================================================================================	
 	public static void startEndTC(String keywordAction, String tcName) throws IOException
