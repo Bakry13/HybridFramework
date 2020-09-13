@@ -6,6 +6,7 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.BeforeTest;
+
 import io.appium.java_client.android.AndroidDriver;
 /**
  * Unit test for simple App.
@@ -14,13 +15,14 @@ import io.appium.java_client.android.AndroidDriver;
 public class TestBase 
 {
 	public static AndroidDriver driver;
+	static GlobalParams params = new GlobalParams();
 	public static File appPath = new File(System.getProperty("user.dir")+"/APK/"+"AnaVodafone.apk");
 	@BeforeTest
 	public static void appInit()
 	{
 		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setCapability("deviceName", "emulator-5554"); //10.73.231.92:5555, DEFNW18C05005421
-		capabilities.setCapability("platformName", "Android");
+		capabilities.setCapability("deviceName", params.getDeviceName()); //10.73.231.92:5555, DEFNW18C05005421
+		capabilities.setCapability("platformName", params.getPlatformName());
 		capabilities.setCapability("automationName", "UiAutomator2"); 
 		//capabilities.setCapability("unicodeKeyboard", true); //to disable keypad
 		//capabilities.setCapability("resetKeyboard", true); //to disable keypad
