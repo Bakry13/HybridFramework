@@ -1,87 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [Web]">
-  <parameter name="ReportName" value="IESearch"/>
-  <parameter name="Browser" value="IE"/>
+  <parameter name="ReportName" value="FirefoxSearch"/>
+  <parameter name="Browser" value="Chrome"/>
   <test parallel="tests" name="FirefoxSearch(failed)">
     <parameter name="ReportName" value="FirefoxSearch"/>
-    <parameter name="Browser" value="Firefox"/>
-    <classes>
-      <class name="Utilities.WebTestBase">
-        <methods>
-          <include name="closeDriver"/>
-          <include name="closeDriver"/>
-          <include name="closeDriver"/>
-          <include name="WebInit"/>
-          <include name="WebInit"/>
-          <include name="WebInit"/>
-          <include name="testMethod"/>
-        </methods>
-      </class> <!-- Utilities.WebTestBase -->
-      <class name="Utilities.ExtentReport">
-        <methods>
-          <include name="EndReport"/>
-          <include name="EndReport"/>
-          <include name="EndReport"/>
-          <include name="StartReport"/>
-          <include name="StartReport"/>
-          <include name="StartReport"/>
-        </methods>
-      </class> <!-- Utilities.ExtentReport -->
-    </classes>
-  </test> <!-- FirefoxSearch(failed) -->
-  <test parallel="tests" name="IESearch(failed)">
-    <parameter name="ReportName" value="IESearch"/>
-    <parameter name="Browser" value="IE"/>
-    <classes>
-      <class name="Utilities.WebTestBase">
-        <methods>
-          <include name="closeDriver"/>
-          <include name="closeDriver"/>
-          <include name="closeDriver"/>
-          <include name="WebInit"/>
-          <include name="WebInit"/>
-          <include name="WebInit"/>
-          <include name="testMethod"/>
-        </methods>
-      </class> <!-- Utilities.WebTestBase -->
-      <class name="Utilities.ExtentReport">
-        <methods>
-          <include name="EndReport"/>
-          <include name="EndReport"/>
-          <include name="EndReport"/>
-          <include name="StartReport"/>
-          <include name="StartReport"/>
-          <include name="StartReport"/>
-        </methods>
-      </class> <!-- Utilities.ExtentReport -->
-    </classes>
-  </test> <!-- IESearch(failed) -->
-  <test parallel="tests" name="ChromeSearch(failed)">
-    <parameter name="ReportName" value="ChromeSearch"/>
     <parameter name="Browser" value="Chrome"/>
     <classes>
-      <class name="Utilities.WebTestBase">
+      <class name="utilities.WebTestBase">
         <methods>
-          <include name="closeDriver"/>
-          <include name="closeDriver"/>
-          <include name="closeDriver"/>
-          <include name="WebInit"/>
+          <include name="closedriver"/>
+          <include name="closedriver"/>
           <include name="WebInit"/>
           <include name="WebInit"/>
           <include name="testMethod"/>
         </methods>
-      </class> <!-- Utilities.WebTestBase -->
-      <class name="Utilities.ExtentReport">
-        <methods>
-          <include name="EndReport"/>
-          <include name="EndReport"/>
-          <include name="EndReport"/>
-          <include name="StartReport"/>
-          <include name="StartReport"/>
-          <include name="StartReport"/>
-        </methods>
-      </class> <!-- Utilities.ExtentReport -->
+      </class> <!-- utilities.WebTestBase -->
     </classes>
-  </test> <!-- ChromeSearch(failed) -->
+  </test> <!-- FirefoxSearch(failed) -->
 </suite> <!-- Failed suite [Web] -->

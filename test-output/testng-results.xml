@@ -1,38 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="APP" duration-ms="25688" started-at="2020-09-12T23:12:47Z" finished-at="2020-09-12T23:13:12Z">
+  <suite started-at="2020-09-29T21:17:18Z" name="Web" finished-at="2020-09-29T21:17:27Z" duration-ms="9378">
     <groups>
     </groups>
-    <test name="Login" duration-ms="25688" started-at="2020-09-12T23:12:47Z" finished-at="2020-09-12T23:13:12Z">
-      <class name="utilities.ExtentReport">
-        <test-method status="PASS" signature="startReport(java.lang.String)[pri:0, instance:utilities.ExtentReport@55d56113]" name="startReport" is-config="true" duration-ms="162" started-at="2020-09-13T01:12:47Z" finished-at="2020-09-13T01:12:47Z">
+    <test started-at="2020-09-29T21:17:18Z" name="ChromeSearch" finished-at="2020-09-29T21:17:27Z" duration-ms="9378">
+      <class name="utilities.WebTestBase">
+        <test-method is-config="true" signature="WebInit(java.lang.String)[pri:0, instance:utilities.WebTestBase@2a266d09]" started-at="2020-09-29T23:17:18Z" name="WebInit" finished-at="2020-09-29T23:17:22Z" duration-ms="3904" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Login]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="appInit()[pri:0, instance:app.LoginExecuter@25bbe1b6]" name="appInit" is-config="true" duration-ms="17204" started-at="2020-09-13T01:12:47Z" finished-at="2020-09-13T01:13:04Z">
+        </test-method> <!-- WebInit -->
+        <test-method signature="testMethod()[pri:0, instance:utilities.WebTestBase@2a266d09]" started-at="2020-09-29T23:17:22Z" name="testMethod" finished-at="2020-09-29T23:17:26Z" duration-ms="4530" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- appInit -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:utilities.ExtentReport@55d56113]" name="endReport" is-config="true" duration-ms="513" started-at="2020-09-13T01:13:12Z" finished-at="2020-09-13T01:13:12Z">
+        </test-method> <!-- testMethod -->
+        <test-method is-config="true" signature="closedriver()[pri:0, instance:utilities.WebTestBase@2a266d09]" started-at="2020-09-29T23:17:26Z" name="closedriver" finished-at="2020-09-29T23:17:27Z" duration-ms="931" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- endReport -->
-      </class> <!-- utilities.ExtentReport -->
-      <class name="app.LoginExecuter">
-        <test-method status="PASS" signature="MISubscriptionTestActions()[pri:0, instance:app.LoginExecuter@25bbe1b6]" name="MISubscriptionTestActions" duration-ms="7784" started-at="2020-09-13T01:13:04Z" finished-at="2020-09-13T01:13:12Z">
+        </test-method> <!-- closedriver -->
+      </class> <!-- utilities.WebTestBase -->
+    </test> <!-- ChromeSearch -->
+    <test started-at="2020-09-29T21:17:18Z" name="FirefoxSearch" finished-at="2020-09-29T21:17:27Z" duration-ms="9378">
+      <class name="utilities.WebTestBase">
+        <test-method is-config="true" signature="WebInit(java.lang.String)[pri:0, instance:utilities.WebTestBase@e1de817]" started-at="2020-09-29T23:17:18Z" name="WebInit" finished-at="2020-09-29T23:17:22Z" duration-ms="3664" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MISubscriptionTestActions -->
-      </class> <!-- app.LoginExecuter -->
-    </test> <!-- Login -->
-  </suite> <!-- APP -->
+        </test-method> <!-- WebInit -->
+        <test-method signature="testMethod()[pri:0, instance:utilities.WebTestBase@e1de817]" started-at="2020-09-29T23:17:22Z" name="testMethod" finished-at="2020-09-29T23:17:27Z" duration-ms="4841" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=85.0.4183.83)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1KRHALU', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\Mohamed\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59167}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 54e83a7d30dcffd866c72cce35825b78]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=85.0.4183.83)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1KRHALU', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\Mohamed\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59167}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 54e83a7d30dcffd866c72cce35825b78
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at utilities.WebTestBase.testMethod(WebTestBase.java:85)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod -->
+        <test-method is-config="true" signature="closedriver()[pri:0, instance:utilities.WebTestBase@e1de817]" started-at="2020-09-29T23:17:27Z" name="closedriver" finished-at="2020-09-29T23:17:27Z" duration-ms="837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedriver -->
+      </class> <!-- utilities.WebTestBase -->
+    </test> <!-- FirefoxSearch -->
+  </suite> <!-- Web -->
 </testng-results>

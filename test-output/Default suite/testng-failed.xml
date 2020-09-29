@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="runner.SearchRunner">
+      <class name="utilities.WebTestBase">
         <methods>
-          <include name="webInit"/>
-          <include name="runScenario" invocation-numbers="1 2 3"/>
-          <include name="tearDownClass"/>
-          <include name="setUpClass"/>
+          <include name="closedriver"/>
+          <include name="WebInit"/>
+          <include name="testMethod"/>
         </methods>
-      </class> <!-- runner.SearchRunner -->
+      </class> <!-- utilities.WebTestBase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

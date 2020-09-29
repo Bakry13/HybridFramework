@@ -3,6 +3,7 @@ package utilities;
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxBinary;
@@ -17,6 +18,9 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
+import pages.GoogleHome;
+import pages.GoogleWiki;
 
 public class WebTestBase
 {
@@ -34,13 +38,14 @@ public class WebTestBase
 			}
 			else if(Browser.equalsIgnoreCase("Firefox"))
 			{
-				System.setProperty("WebDriver.gecko.driver", driverPath+"geckodriver.exe");
-				File pathBinary = new File("C:\\Users\\V19MOsman\\AppData\\Local\\Mozilla Firefox\\firefox.exe");
-				FirefoxBinary firefoxBinary = new FirefoxBinary(pathBinary);   
-				DesiredCapabilities desired = DesiredCapabilities.firefox();
-				FirefoxOptions options = new FirefoxOptions();
-				desired.setCapability(FirefoxOptions.FIREFOX_OPTIONS, options.setBinary(firefoxBinary));
-				driver = new FirefoxDriver(options);
+				System.setProperty("webdriver.gecko.driver", driverPath+"geckodriver.exe");
+//				File pathBinary = new File("C:\\Users\\V19MOsman\\AppData\\Local\\Mozilla Firefox\\firefox.exe");
+//				FirefoxBinary firefoxBinary = new FirefoxBinary(pathBinary);   
+//				DesiredCapabilities desired = DesiredCapabilities.firefox();
+//				FirefoxOptions options = new FirefoxOptions();
+//				desired.setCapability(FirefoxOptions.FIREFOX_OPTIONS, options.setBinary(firefoxBinary));
+//				driver = new FirefoxDriver(options);
+				driver = new FirefoxDriver();
 			}
 			else if(Browser.equalsIgnoreCase("IE"))
 			{
@@ -57,7 +62,7 @@ public class WebTestBase
 				driver = new InternetExplorerDriver(ieCapabilities);
 			}
 			driver.manage().deleteAllCookies();
-			driver.manage().window().maximize();
+			//driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS); //wait until loading the initial webpage
 			driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		} catch (Exception e) {
@@ -76,5 +81,7 @@ public class WebTestBase
 	public void testMethod()
 	{
 		driver.get("https://www.google.com.eg/");
+		driver.findElement(By.name("q")).sendKeys("Wikipedia");
+		driver.findElement(By.name("btnK")).click();
 	}
 }
