@@ -1,6 +1,12 @@
 package utilities;
 
+import utilities.GlobalParams.Language;
+import utilities.GlobalParams.Platform;
+
 public class GlobalParams {
+	//---------------------------------------App Language---------------------------------------
+    public static Language currentLanguage = Language.ARABIC;
+    //------------------------------------------------------------------------------------------
     private static ThreadLocal<String> platformName = new ThreadLocal<String>();
     private static ThreadLocal<String> udid = new ThreadLocal<String>();
     private static ThreadLocal<String> deviceName = new ThreadLocal<String>();
@@ -83,5 +89,54 @@ public class GlobalParams {
             default:
                 throw new IllegalStateException("Invalid Platform Name!");
         }
+    }
+
+    private void setCurrentMachineSupportedPlatform(GlobalParams params) {
+        String osName = System.getProperty("os.name", "windows");
+        Platform mobileSupportedPlatform;
+        if (osName.toLowerCase().contains("mac"))
+            mobileSupportedPlatform = Platform.IOS;
+        else
+            mobileSupportedPlatform = Platform.ANDROID;
+
+        params.setPlatformName(mobileSupportedPlatform);
+    }
+
+    private void setPlatformName(Platform mobileSupportedPlatform) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void setCurrentTestLanguage(String appLanguage) {
+        if (appLanguage.equals(GlobalParams.Language.ARABIC.toString())) {
+            currentLanguage = GlobalParams.Language.ARABIC;
+        } else
+            currentLanguage = GlobalParams.Language.ENGLISH;
+    }
+
+    //=================================================================
+    public GlobalParams() {
+    }
+
+    public enum Platform {
+        ANDROID,
+        IOS
+    }
+
+    public enum Language {
+        ENGLISH,
+        ARABIC
+    }
+
+    public static int getCurrentLanguagePosition() {
+        int position = 0;
+        Language[] availableLanguages = Language.values();
+        for (int i = 0; i < availableLanguages.length; i++) {
+            if (availableLanguages[i] == currentLanguage) {
+                position = i;
+                break;
+            }
+        }
+        return position;
     }
 }
