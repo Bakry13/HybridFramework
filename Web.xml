@@ -3,7 +3,7 @@
 	<parameter name="ReportName" value="ChromeSearch" />
 	<parameter name="Browser" value="Chrome" />
 		<classes>
-			<class name="utilities.ExtentReport" />
+			<!-- <class name="utilities.ExtentReport" /> -->
 			<class name="utilities.WebTestBase" /> 
 		</classes>
 	</test>
