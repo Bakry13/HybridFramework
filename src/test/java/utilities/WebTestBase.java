@@ -10,6 +10,7 @@ import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -61,6 +62,10 @@ public class WebTestBase
 				System.setProperty("webdriver.ie.driver", driverPath+"IEdriverServer.exe");
 				driver = new InternetExplorerDriver(ieCapabilities);
 			}
+			else if(Browser.equalsIgnoreCase("Headless"))
+			{
+				driver = new HtmlUnitDriver();
+			}
 			driver.manage().deleteAllCookies();
 			//driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS); //wait until loading the initial webpage
@@ -83,5 +88,6 @@ public class WebTestBase
 		driver.get("https://www.google.com.eg/");
 		driver.findElement(By.name("q")).sendKeys("Wikipedia");
 		driver.findElement(By.name("btnK")).click();
+		System.out.println(driver.getCurrentUrl());
 	}
 }

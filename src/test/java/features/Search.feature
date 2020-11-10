@@ -8,17 +8,17 @@ Feature: Wikipedia Search
 	And Choose Wikipedia website
 	Then Wikipedia website is opened
 	
-	Scenario Outline: Search for other words
+	Scenario Outline: Search for other words according to <status>
 	Given The user navigate to Google page
 	When User type the "<word>"
 	And Press Search again
 	#Then Close Browser
 	
 	Examples:
-	|word|
-	|Marvel|
-	|facebook|
-	|twitter|
+	| word     | status  |
+	| Marvel   | movies  |
+	| facebook | social1 |
+	| twitter  | social2 |
 	
 #============================================================
 #Author: your.email@your.domain.com

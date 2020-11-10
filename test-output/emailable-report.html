@@ -31,46 +31,52 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">ChromeSearch</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">9.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="stripe"><td style="text-align:left;padding-right:2em">FirefoxSearch</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">9.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="total"><td>Total</td>
-<td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">9.4 seconds</td><td colspan="2">&nbsp;</td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">4</td><td class="numi">3</td><td class="numi">0</td><td class="numi_attn">4</td><td class="numi">18.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">ChromeSearch &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">utilities.WebTestBase</td><td><a href="#m1"><b>testMethod</b>  </a></td><td class="numi">1</td><td>1601414242397</td><td class="numi">4530</td></tr>
-<tr><th colspan="4">FirefoxSearch &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">utilities.WebTestBase</td><td><a href="#m2"><b>testMethod</b>  </a></td><td class="numi">1</td><td>1601414242171</td><td class="numi">4841</td></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="4">runner.SearchRunner</td><td><a href="#m1"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">1</td><td>1604999256865</td><td class="numi">8101</td></tr><tr class="failedodd"><td><a href="#m2"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">1</td><td>1604999256865</td><td class="numi">8101</td></tr><tr class="failedodd"><td><a href="#m3"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">1</td><td>1604999256865</td><td class="numi">8101</td></tr><tr class="failedodd"><td><a href="#m4"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">1</td><td>1604999256865</td><td class="numi">8101</td></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="4">runner.SearchRunner</td><td><a href="#m5"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1604999264967</td><td class="numi">7865</td></tr><tr class="passedodd"><td><a href="#m6"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1604999264967</td><td class="numi">7865</td></tr><tr class="passedodd"><td><a href="#m7"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1604999264967</td><td class="numi">7865</td></tr><tr class="passedodd"><td><a href="#m8"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1604999264967</td><td class="numi">7865</td></tr>
 </table>
-<h1>ChromeSearch</h1>
-<h2 id="m1">utilities.WebTestBase:testMethod</h2>
+<h1>Default test</h1>
+<h2 id="m1">runner.SearchRunner:runScenario</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>&quot;Open Wikipedia from Google&quot;</td>
+<td>&quot;Optional[Wikipedia Search]&quot;</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>null</p>
+steps.Search.wikipedia_website_is_opened(Search.java:43)
+<br/>at ✽.Wikipedia website is opened(file:///D:/Automation/HybridFramework/src/test/java/features/Search.feature:9)
+<br/>1 lines not shown
+</td></tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h1>FirefoxSearch</h1>
-<h2 id="m2">utilities.WebTestBase:testMethod</h2>
-<div style="padding-left:3em">
-<p>stale element reference: element is not attached to the page document
-  (Session info: chrome=85.0.4183.83)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-1KRHALU&apos;, ip: &apos;192.168.43.163&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\Mohamed\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59167}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 54e83a7d30dcffd866c72cce35825b78</p>
-java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-<br/>at utilities.WebTestBase.testMethod(WebTestBase.java:85)
-<br/>21 lines not shown
-</div>
+<h2 id="m2">runner.SearchRunner:runScenario</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>&quot;Search for other words according to social1&quot;</td>
+<td>&quot;Optional[Wikipedia Search]&quot;</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">runner.SearchRunner:runScenario</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>&quot;Search for other words according to movies&quot;</td>
+<td>&quot;Optional[Wikipedia Search]&quot;</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">runner.SearchRunner:runScenario</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>&quot;Search for other words according to social2&quot;</td>
+<td>&quot;Optional[Wikipedia Search]&quot;</td>
+</tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

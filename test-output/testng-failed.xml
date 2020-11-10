@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [Web]">
-  <parameter name="ReportName" value="FirefoxSearch"/>
-  <parameter name="Browser" value="Chrome"/>
-  <test parallel="tests" name="FirefoxSearch(failed)">
-    <parameter name="ReportName" value="FirefoxSearch"/>
-    <parameter name="Browser" value="Chrome"/>
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="utilities.WebTestBase">
+      <class name="runner.SearchRunner">
         <methods>
-          <include name="closedriver"/>
-          <include name="closedriver"/>
-          <include name="WebInit"/>
-          <include name="WebInit"/>
-          <include name="testMethod"/>
+          <include name="webInit"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
         </methods>
-      </class> <!-- utilities.WebTestBase -->
+      </class> <!-- runner.SearchRunner -->
     </classes>
-  </test> <!-- FirefoxSearch(failed) -->
-</suite> <!-- Failed suite [Web] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

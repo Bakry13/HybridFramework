@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="2" passed="1" failed="1" skipped="0">
+<testng-results skipped="0" failed="1" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-09-29T21:17:18Z" name="Web" finished-at="2020-09-29T21:17:27Z" duration-ms="9378">
+  <suite name="Default suite" duration-ms="18546" started-at="2020-11-10T09:07:34Z" finished-at="2020-11-10T09:07:52Z">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SearchRunner@2758fe70]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2020-09-29T21:17:18Z" name="ChromeSearch" finished-at="2020-09-29T21:17:27Z" duration-ms="9378">
-      <class name="utilities.WebTestBase">
-        <test-method is-config="true" signature="WebInit(java.lang.String)[pri:0, instance:utilities.WebTestBase@2a266d09]" started-at="2020-09-29T23:17:18Z" name="WebInit" finished-at="2020-09-29T23:17:22Z" duration-ms="3904" status="PASS">
+    <test name="Default test" duration-ms="18546" started-at="2020-11-10T09:07:34Z" finished-at="2020-11-10T09:07:52Z">
+      <class name="runner.SearchRunner">
+        <test-method status="PASS" signature="webInit(java.lang.String)[pri:0, instance:runner.SearchRunner@2758fe70]" name="webInit" is-config="true" duration-ms="2121" started-at="2020-11-10T11:07:34Z" finished-at="2020-11-10T11:07:36Z">
           <params>
             <param index="0">
               <value>
@@ -17,95 +20,88 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- WebInit -->
-        <test-method signature="testMethod()[pri:0, instance:utilities.WebTestBase@2a266d09]" started-at="2020-09-29T23:17:22Z" name="testMethod" finished-at="2020-09-29T23:17:26Z" duration-ms="4530" status="PASS">
+        </test-method> <!-- webInit -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.SearchRunner@2758fe70]" name="setUpClass" is-config="true" duration-ms="390" started-at="2020-11-10T11:07:36Z" finished-at="2020-11-10T11:07:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMethod -->
-        <test-method is-config="true" signature="closedriver()[pri:0, instance:utilities.WebTestBase@2a266d09]" started-at="2020-09-29T23:17:26Z" name="closedriver" finished-at="2020-09-29T23:17:27Z" duration-ms="931" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closedriver -->
-      </class> <!-- utilities.WebTestBase -->
-    </test> <!-- ChromeSearch -->
-    <test started-at="2020-09-29T21:17:18Z" name="FirefoxSearch" finished-at="2020-09-29T21:17:27Z" duration-ms="9378">
-      <class name="utilities.WebTestBase">
-        <test-method is-config="true" signature="WebInit(java.lang.String)[pri:0, instance:utilities.WebTestBase@e1de817]" started-at="2020-09-29T23:17:18Z" name="WebInit" finished-at="2020-09-29T23:17:22Z" duration-ms="3664" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SearchRunner@2758fe70]" name="runScenario" duration-ms="8101" started-at="2020-11-10T11:07:36Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-11-10T11:07:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA["Open Wikipedia from Google"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Wikipedia Search]"]]>
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WebInit -->
-        <test-method signature="testMethod()[pri:0, instance:utilities.WebTestBase@e1de817]" started-at="2020-09-29T23:17:22Z" name="testMethod" finished-at="2020-09-29T23:17:27Z" duration-ms="4841" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=85.0.4183.83)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-1KRHALU', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\Mohamed\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59167}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 54e83a7d30dcffd866c72cce35825b78]]>
-            </message>
+          <exception class="java.lang.AssertionError">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=85.0.4183.83)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-1KRHALU', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\Mohamed\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59167}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 54e83a7d30dcffd866c72cce35825b78
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at utilities.WebTestBase.testMethod(WebTestBase.java:85)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:844)
+              <![CDATA[java.lang.AssertionError
+	at steps.Search.wikipedia_website_is_opened(Search.java:43)
+	at ✽.Wikipedia website is opened(file:///D:/Automation/HybridFramework/src/test/java/features/Search.feature:9)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMethod -->
-        <test-method is-config="true" signature="closedriver()[pri:0, instance:utilities.WebTestBase@e1de817]" started-at="2020-09-29T23:17:27Z" name="closedriver" finished-at="2020-09-29T23:17:27Z" duration-ms="837" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SearchRunner@2758fe70]" name="runScenario" duration-ms="3452" started-at="2020-11-10T11:07:44Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-11-10T11:07:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search for other words according to movies"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Wikipedia Search]"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closedriver -->
-      </class> <!-- utilities.WebTestBase -->
-    </test> <!-- FirefoxSearch -->
-  </suite> <!-- Web -->
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SearchRunner@2758fe70]" name="runScenario" duration-ms="2114" started-at="2020-11-10T11:07:48Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-11-10T11:07:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search for other words according to social1"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Wikipedia Search]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SearchRunner@2758fe70]" name="runScenario" duration-ms="2297" started-at="2020-11-10T11:07:50Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-11-10T11:07:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search for other words according to social2"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Wikipedia Search]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.SearchRunner@2758fe70]" name="tearDownClass" is-config="true" duration-ms="34" started-at="2020-11-10T11:07:52Z" finished-at="2020-11-10T11:07:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.SearchRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
